@@ -1,0 +1,220 @@
+body {
+   /* acme-regular - latin */
+@font-face {
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/acme-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/acme-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/acme-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/acme-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/acme-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/acme-v18-latin-regular.svg#Acme') format('svg'); /* Legacy iOS */
+}
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+
+
+
+  
+  #main-header {
+    border-bottom: 2px solid #000;
+    position:fixed;
+    width:100%;
+    background: rgba(255,255,255,.7);
+    top:0px;
+    height:80px;
+  }
+  
+  #main-header::after{
+    content: "";
+    display: block;
+    width: 340px;
+    height: 35px;
+    background: #dadada;
+    position: absolute;
+    top: 20px;
+    left: 8px;
+  }
+  
+  #top-stories {
+    width:auto;
+    margin:auto;
+    margin-top: 20px;
+    text-align:center;
+  }
+  
+  
+  article {
+    border-radius: 73px;
+    border-top: 5px dotted #000;
+    border-right: 5px dotted #9E1B1B;
+    border-bottom: 4px dotted #353D9B;
+    border-left: 3px dotted #EA5656;
+    height: 550px;
+    width: 700px;
+    margin-left: 35%;
+    margin-top: 5px;
+  }
+  
+  /*article:hover{
+    box-shadow: 6px 6px 10px rgba(0,0,0,.7);
+  }
+  
+  article:active {
+    opacity:.4;
+  }
+  
+  article img{
+    width: 100%;
+    height:100%;
+  }*/
+  
+  .article-image {
+    height: 400px;
+    width: 50%;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 73px;
+    margin-left: 150px;
+  }
+  
+  .more-link {
+    font-style:italic;
+  }
+  
+  .bolded-link {
+    color:#F00;
+  }
+  
+  .more-link.bolded-link {
+    font-weight:700;
+  }
+  
+  a {
+    text-decoration: none;
+    text-decoration: overline underline;
+    text-decoration-color: #000;
+    text-decoration-line: none;
+  }
+  
+  a:hover{
+    color:#000;
+  }
+  
+  p {
+    letter-spacing: .5px;
+    word-spacing:2px;
+    text-align:justify;
+  }
+  
+  .my-input {
+    display:block;
+    width:98%;
+    margin:10px;
+    padding: 10px 20px;
+    border:1px solid transparent;
+    border-radius: 10px;
+  }
+  
+  .my-input:focus {
+    background: #d1fffb;
+    color:#b3b3b3;
+    outline:none;
+  }
+  
+ 
+  
+  .my-text{
+    max-height: 200px;
+    overflow:scroll;
+    overflow-x: hidden;
+    border:2px solid #000;
+  }
+  */
+  /*css формы*/
+  body {
+    /*text-align: center;*/
+    margin: 10;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+  }
+ 
+  input {
+    display: inline-block;
+    margin: 10px auto;
+    border: 2px solid #eee;
+    padding: 10px 20px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+  }
+  textarea {
+    display: inline-block;
+    margin: 10px auto;
+    border: 2px solid #eee;
+    padding: 10px 20px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+  }
