@@ -3,8 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+
 
 input[type=text], select, textarea {
   width: 100%;
@@ -98,6 +97,8 @@ input[type=submit] {
   color: #ffffff; 
 }
 </style>
+<body>
+  
 
 </head>
 <title>CALENDAR</title>
@@ -119,7 +120,32 @@ input[type=submit] {
 </div>
 </head>
 <body>
-
+  <header id="main-header">
+    <ul class="profile-menu">
+      <li><a class="profile-menu-trigger" data-trigger="dropdown" href="#">Личный кабинет</a>
+        <ul class="profile-submenu submenu">
+              <li><a href="#">Мой аккаунт</a></li>
+          <li><a href="#">Профайл</a></li>
+          <li><a href="#">Параметры</a></li>
+          <li><a href="#">Выход</a></li>
+        </ul>
+      </li>
+    </ul>
+   </head>
+  </header>
+  <header id="main-header">
+    <ul class="profile-menu">
+      <li><a class="profile-menu-trigger" data-trigger="dropdown" href="#">Личный кабинет</a>
+        <ul class="profile-submenu submenu">
+              <li><a href="#">Мой аккаунт</a></li>
+          <li><a href="#">Профайл</a></li>
+          <li><a href="#">Параметры</a></li>
+          <li><a href="#">Выход</a></li>
+        </ul>
+      </li>
+    </ul>
+   </head>
+  </header>
 <h3>Contact Form</h3>
 
 <div class="container">
@@ -142,9 +168,13 @@ input[type=submit] {
 
     <input type="submit" value="Submit">
   </form>
+
+
+
 </div>
-
-
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <script charset="utf-8" src="./js/main.js"></script>
+</body>
 <script>
   function autocomplete(inp, arr) {
     
@@ -193,7 +223,7 @@ input[type=submit] {
           currentFocus++;
           
           addActive(x);
-        } else if (e.keyCode == 38) { //up
+        } else if (e.keyCode == 38) { 
           
           currentFocus--;
          

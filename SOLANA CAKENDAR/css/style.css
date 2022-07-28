@@ -86,10 +86,9 @@ body {
 
   
   #main-header {
-    border-bottom: 2px solid #000;
+    border-radius: 4px;
     position:fixed;
-    width:100%;
-    background: rgba(255,255,255,.7);
+    width:100%;    
     top:0px;
     height:80px;
   }
@@ -98,8 +97,7 @@ body {
     content: "";
     display: block;
     width: 340px;
-    height: 35px;
-    background: #dadada;
+    height: 35px;    
     position: absolute;
     top: 20px;
     left: 8px;
@@ -264,3 +262,125 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
   }
+  /* Текст расписания*/
+  blockquote {
+    margin: 0;
+    background: #FFF4ED;
+    padding: 40px;
+    color: #3F484D;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    }
+    blockquote:before, blockquote:after {
+    font-size: 45px;
+    color: #3CA1D9;
+    position: absolute;
+    height: 2px;
+    left: 40px;
+    right: 40px;
+    line-height: .5;
+    background: linear-gradient(to right, #3CA1D9 45%, transparent 45%, transparent), linear-gradient(to right, transparent, transparent 55%, #3CA1D9 55%);
+    font-family: serif;
+    }
+    blockquote:before {
+    content: "\201C";
+    top: 30px;
+    }
+    blockquote:after {
+    content: "\201D";
+    bottom: 30px;
+    }
+    blockquote p {
+    font-size: 20px;
+    }
+    blockquote footer {
+    margin-bottom: 1em;
+    }
+    blockquote cite {
+    font-style: normal;
+    }
+
+    /*меню */.profile-menu{
+  list-style: none;
+  float: right;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.submenu{
+  list-style: none;
+    padding: 0px;
+    border: 1px solid #aaa;
+    background: #fff;
+    margin-top: 25px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+
+.submenu a{
+  text-decoration: none;
+    padding: 10px 30px;
+    display: block;
+    color: #333;
+    text-shadow: none;
+    font-weight: 700;
+    width:300px;
+
+}
+
+.submenu a:hover {
+  background: #f5f4f4;
+}
+
+.submenu.active {
+  display:block;
+}
+
+[data-trigger="dropdown"]{
+  padding-bottom: 35px;
+}
+
+section {
+  max-width: 100%;
+  width:700px;
+  margin:auto;
+}
+
+#context {
+  display: inline-block;
+  position: absolute;
+  background: #fff;
+  box-shadow: 2px 2px 15px rgba(0,0,0,.5);
+  display: none;
+}
+
+.context-menu {
+  list-style: none;
+  padding: 0px;
+  margin:0px;
+}
+
+.context-menu a{
+  display: block;
+  width: 200px;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  text-shadow: none;
+  font-weight: 600;
+}
+
+.context-menu a:hover{
+  background:#ddd;
+}
+
+.context-menu a.hidden {
+  display:none;
+}
+
+.context-menu a.hidden.shown {
+  display:block;
+}
